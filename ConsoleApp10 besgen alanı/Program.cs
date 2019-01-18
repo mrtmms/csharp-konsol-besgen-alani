@@ -48,8 +48,11 @@ namespace ConsoleApp10_besgen_alanı
 
                 if (k <= 0 || r <= 0)
                 {
-                    Console.WriteLine("lütfen sadece pozitif tam sayı giriniz");
-                    Console.Read();
+                    /*
+                     * kötü çözümler ama şimdilik ses etmiyorum.
+                     */
+                    Console.WriteLine("lütfen sadece pozitif tam sayı giriniz"); // burada da continue diyerek başa yollayalım.
+                    continue;
                 }
                 else
                 {
@@ -59,6 +62,7 @@ namespace ConsoleApp10_besgen_alanı
 
                     Console.WriteLine("Devam etmek için bir tuşa basın");
                     Console.ReadKey();
+                    continue; // bunlar hep başa döndürür.
                 }
             }
         }
